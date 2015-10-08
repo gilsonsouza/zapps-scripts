@@ -19,7 +19,7 @@ for var in "$@"
 do
     ./zapps kits  -b $var --load --truncateLog -q $SF -l $LOGDIR --bufsize $BUFF
 
-#    ./zapps kits  -b $var  --duration $DURATION -q $SF -l $LOGDIR --bufsize $BUFF
+    ./zapps kits  -b $var  --duration $DURATION -q $SF -l $LOGDIR --bufsize $BUFF
     #echo ./zapps kits  -b $1  -t $NUMTHREADS --duration $DURATION -q $SF -l $LOGDIR
 
     ./zapps logplot -l $LOGDIR > logplot.txt
